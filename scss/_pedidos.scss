@@ -1,0 +1,154 @@
+.pedidos{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pedidos-item{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #F3D6E1;
+	border-radius: 10px;
+  width: 80%;
+  margin-top: 15px;
+  padding: 20px;
+  &:last-child{
+    margin-bottom: 15px;
+  }
+}
+
+#icono-mensaje {
+  width: 100px;
+  height: 100px;
+  cursor: default;
+  path{
+    stroke: white;
+    fill: white;
+    stroke-width: 1px;
+  }
+}
+
+@each $icono in ojo, mensaje, sonrisa {
+  #icono-#{$icono} { 
+    width: 100px;
+    height: 100px;
+    cursor: default;
+    path{
+      stroke: white;
+      fill: white;
+      stroke-width: 1px;
+    }
+   }
+}
+
+.numero{
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.texto{
+	width: 100%;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+@media (min-width: 768px) {
+  .pedidos-item{
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  .pedidos{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+	  align-items: flex-start;
+  }
+}
+
+#icono-ojo{
+  animation: anima-ojo 5s infinite both;
+}
+
+#icono-mensaje{
+  animation: anima-mensaje 5s infinite both;
+  animation-delay: 2s;
+}
+
+#icono-sonrisa{
+  animation: anima-smile 7s infinite both;
+  animation-delay: 4s;
+}
+
+ @keyframes anima-mensaje {
+  0%, 50% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  7% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  15% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  22% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  30% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  37% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes anima-smile {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  7% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  10% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  12% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  16% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  19% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  15% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes anima-ojo {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  7% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  10% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  12% {
+    transform: scale3d(1.3, 0.2, 1);
+  }
+  16% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  19% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  15% {
+    transform: scale3d(1, 1, 1);
+  }
+}
