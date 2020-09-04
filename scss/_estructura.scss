@@ -23,6 +23,7 @@ section{
 	grid-area: section;
 }
 footer{
+    margin-top: 15px;
     grid-area: footer;
     background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
     display: flex;

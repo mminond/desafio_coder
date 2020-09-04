@@ -66,10 +66,19 @@
 
 @for $i from 1 through 2 {
   #imagen-home-#{$i} {
-      height: 500px;
-      width: 500px;
-      border-radius: 10px;
-      background-image: url("../img/menu-tortas/torta-" + $i + ".jpg");
+    margin: 15px;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    background-image: url("../img/menu-tortas/torta-" + $i + ".jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through 2 {
+    #imagen-home-#{$i} {
+      margin: 0px;
+    }
   }
 }
 

@@ -17,6 +17,7 @@ section {
   grid-area: section; }
 
 footer {
+  margin-top: 15px;
   grid-area: footer;
   background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
   display: flex;
@@ -168,16 +169,24 @@ path#middle {
     margin-top: 7rem; } }
 
 #imagen-home-1 {
+  margin: 15px;
   height: 500px;
   width: 500px;
   border-radius: 10px;
   background-image: url("../img/menu-tortas/torta-1.jpg"); }
 
 #imagen-home-2 {
+  margin: 15px;
   height: 500px;
   width: 500px;
   border-radius: 10px;
   background-image: url("../img/menu-tortas/torta-2.jpg"); }
+
+@media (min-width: 768px) {
+  #imagen-home-1 {
+    margin: 0px; }
+  #imagen-home-2 {
+    margin: 0px; } }
 
 body header nav {
   display: flex;
@@ -205,6 +214,7 @@ body header nav {
   border-radius: 30px;
   margin: 20px; }
   .menu-tortas-item h4 {
+    font-size: 20px;
     display: none;
     margin: 0px;
     padding: 10px;
