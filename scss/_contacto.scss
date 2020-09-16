@@ -1,14 +1,14 @@
 form{
- margin: 20px;
+	margin: 20px;
 }
 
 .boton-formulario{
 	background-color:#F3D6E1;
-  border: 1px solid #E5A5BD;
-  &:hover{
-    background-color:#E5A5BD;
-    border: 1px solid #E5A5BD;
-  }
+	border: 1px solid #E5A5BD;
+	&:hover{
+	background-color:#E5A5BD;
+	border: 1px solid #E5A5BD;
+	}
 }
 
 .form-control:focus{

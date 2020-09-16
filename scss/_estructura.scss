@@ -2,72 +2,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px auto 100px;
-    gap: 0px;
-    grid-template-areas:
-    "header"
-    "section"
-    "footer";
+	font-family: 'Montserrat', sans-serif;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 80px auto 100px;
+	gap: 0px;
+	grid-template-areas:
+	"header"
+	"section"
+	"footer";
 }
 
 header{
-    grid-area: header;
-    nav{
-        background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
-    }
+	grid-area: header;
+	nav{
+		background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
+	}
 }
 section{
 	grid-area: section;
 }
 footer{
-    margin-top: 15px;
-    grid-area: footer;
-    background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
-    display: flex;
+	margin-top: 15px;
+	grid-area: footer;
+	background-image: linear-gradient(to right, #F3D6E1, #E5A5BD);
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-    align-items: center;
-    h3{
-        text-align: center;
-        font-style: italic;
-        font-weight: bold;
-	    font-size: 20px;
-	    font-family: 'Merienda One', cursive;
-    }
+	align-items: center;
+	h3{
+		text-align: center;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 20px;
+		font-family: 'Merienda One', cursive;
+	}
 }
 
 //Navbar - Logo
 #header__logo{
-    height: 50px;
-    img{
-        height: 100%;
-    }
+	height: 50px;
+	img{
+		height: 100%;
+	}
 }
 
 //Navbar - Menú
 .header__botones{
-    border-radius: 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    &:hover{
-        animation-name: botones;
-        animation-timing-function: ease-out;
-        animation-duration: 0.5s;
-        animation-fill-mode: both;
-    }
-    
+	border-radius: 10px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	&:hover{
+		animation-name: botones;
+		animation-timing-function: ease-out;
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+	}
 }
 
 @keyframes botones {
-    0%{color:black;}
-    100%{background-color: #E5A5BD;
-        color:white;}
+	0%{color:black;}
+	100%{background-color: #E5A5BD;
+		color:white;}
 }
 
 //Navbar - Redes Sociales
@@ -76,66 +75,66 @@ footer{
 	width: 40px;
 }
 #header__social-media__ig{
-    margin-right: 10px;
+	margin-right: 10px;
 }
 #header__social-media {
-    display: none;
+	display: none;
 }
 
 @media (min-width: 768px) {
-    .botones{
-        background-color: white;
-        color: black;
-        margin-right: 10px;
-    }
+	.botones{
+		background-color: white;
+		color: black;
+		margin-right: 10px;
+	}
 
-    #header__social-media {
-        display: flex;
-    }
+	#header__social-media {
+		display: flex;
+	}
 
-    footer h3{
-        font-size: 30px;
-    }
+	footer h3{
+		font-size: 30px;
+	}
 }
 
 #header__boton-desplegable, #header__boton-icono-desplegable{
-    width: 50px;
-    height: 50px;
+	width: 50px;
+	height: 50px;
 }
 
 svg {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 path {
-  fill: none;
-  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  stroke-width: 40px;
-  stroke-linecap: round;
-  stroke: #000000;
-  stroke-dashoffset: 0px;
+	fill: none;
+	-webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+	-moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+	-o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+	-ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+	transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+	stroke-width: 40px;
+	stroke-linecap: round;
+	stroke: #000000;
+	stroke-dashoffset: 0px;
 }
 path#top, path#bottom {
-  stroke-dasharray: 240px 950px;
+	stroke-dasharray: 240px 950px;
 }
 path#middle {
-  stroke-dasharray: 240px 240px;
+	stroke-dasharray: 240px 240px;
 }
 .cross path#top, .cross path#bottom {
-  stroke-dashoffset: -650px;
-  stroke-dashoffset: -650px;
+	stroke-dashoffset: -650px;
+	stroke-dashoffset: -650px;
 }
 .cross path#middle {
-  stroke-dashoffset: -115px;
-  stroke-dasharray: 1px 220px;
+	stroke-dashoffset: -115px;
+	stroke-dasharray: 1px 220px;
 }
